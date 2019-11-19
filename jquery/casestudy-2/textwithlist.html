@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>
+      </title>
+      <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body >
+    <div class="main">
+      <input type="text" class="two" placeholder="what need to be done " id="txt1">
+      <br>
+      <ul id="menu" style="font-size:2em">
+      </ul>
+    </div>
+      <script>
+      $('input').keyup(function(e) {
+    var comment = $.trim($("#txt1").val());
+          if(e.keyCode == 13) {
+               $("#menu").append('<li>'+comment+'</li>');
+               txt1.value=null;
+          }
+          var rem=document.getElementsByTagName("li");
+          for(var i=0;i<rem.length;i++){
+            rem[i].onclick=function(){this.parentNode.removeChild(this);}
+          }
+      });
+      </script>
+  </body>
+</html>

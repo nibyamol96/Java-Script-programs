@@ -1,0 +1,14 @@
+.main{
+position: absolute;
+top:12em;
+left: 25em;
+}
+.two{
+ width: 20em;
+ height: 3em;
+ font-size: 2em;
+ border:none;
+}
+li:hover{
+ text-decoration: line-through;
+}
